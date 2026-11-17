@@ -1,0 +1,59 @@
+# ==========================================
+# 1. VS Code Workspace & IDE Files
+# ==========================================
+.vscode/
+*.code-workspace
+.history/
+
+# ==========================================
+# 2. Python Bytecode, Cache & Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# 3. Project Dataset (Rebuilt via setup_dataset.py)
+# ==========================================
+# Ignore the 600 generated road frames & raw downloaded video
+dataset/driving_sequence/frames/
+dataset/sample_driving.mp4
+
+# Keep telemetry.csv or allow setup_dataset.py to regenerate all of dataset/
+# (Uncomment the line below if you want to ignore the entire dataset folder)
+# dataset/
+
+# ==========================================
+# 4. Temporary Word / Office Lock Files
+# ==========================================
+# Ignores hidden lock files created when a .docx report is open in Word
+~$*.docx
+~$*.doc
+~$*.xlsx
+
+# ==========================================
+# 5. OS & System Files (Windows / macOS)
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ==========================================
+# 6. Explicitly Tracked Outputs (Kept on GitHub)
+# ==========================================
+# Ensure results/ charts, models/, and .docx reports ARE uploaded to GitHub
+!results/project_executive_dashboard.png
+!results/rl_evaluation_results.png
+!results/live_copilot_demo.mp4
+!models/
+!*.docx
